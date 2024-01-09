@@ -1,0 +1,19 @@
+module.exports = {
+	stories: [
+		'../src/**/*.stories.mdx',
+		'../src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
+	],
+	addons: [
+		'@storybook/addon-links',
+		'@storybook/addon-essentials',
+		'storybook-addon-pseudo-states',
+		{
+			name: '@storybook/addon-storysource',
+			options: {
+				loaderOptions: {
+					injectStoryParameters: false,
+				},
+			},
+		},
+	],
+};
