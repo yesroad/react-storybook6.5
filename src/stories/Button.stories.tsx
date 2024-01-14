@@ -11,6 +11,18 @@ export default {
 	argTypes: {
 		backgroundColor: { control: 'color' },
 	},
+	parameters: {
+		componentSubtitle: '버튼 component 입니다',
+		docs: {
+			description: {
+				component: `- 버튼 component 입니다  
+				- 버튼 component 입니다
+				- 버튼 *component* 입니다
+				- \\<Button\\> **component** 입니다.
+        `,
+			},
+		},
+	},
 } as ComponentMeta<typeof Button>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
